@@ -1,0 +1,194 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "features": "Fonctionnalités",
+    "instances": "Instances",
+    "contribute": "Contribuer"
+  },
+  "footer": {
+    "github": "GitHub",
+    "license": "Licence",
+    "copy": "© 2026 Suddenly"
+  },
+  "index": {
+    "hero": {
+      "label": "✦ Réseau fédéré de fiction",
+      "title_1": "Quand les histoires",
+      "title_2": "se croisent",
+      "title_accent": "soudainement",
+      "subtitle": "Suddenly est un réseau fédéré pour les joueurs de jeu de rôle. Publiez vos comptes-rendus de partie, liez vos personnages, et tissez des fictions partagées à travers le Fediverse.",
+      "cta_primary": "Rejoindre une instance",
+      "cta_secondary": "Découvrir les fonctionnalités"
+    },
+    "concept": {
+      "label": "Le concept",
+      "title_1": "Vos PNJ deviennent",
+      "title_accent": "les héros d'une autre histoire",
+      "p1": "Vous publiez vos comptes-rendus de partie. Les personnages non-joueurs que vous mentionnez deviennent des points d'ancrage que d'autres joueurs peuvent réclamer, adopter ou dériver pour tisser des liens entre fictions indépendantes.",
+      "p2": "Le nom \"Suddenly\" évoque ce moment où l'inattendu surgit — quand un personnage apparaît",
+      "p2_em": "soudainement dans une autre histoire.",
+      "links": [
+        { "icon": "⚔️", "title": "Claim (rétcon)", "desc": "\"Ton PNJ c'était mon PJ depuis le début.\"" },
+        { "icon": "🎭", "title": "Adopt (reprise)", "desc": "\"Ton PNJ m'intéresse, j'en fais mon PJ à partir de maintenant.\"" },
+        { "icon": "🌿", "title": "Fork (dérivation)", "desc": "\"Je crée un PJ inspiré de ton PNJ, mais distinct.\"" }
+      ]
+    },
+    "features": {
+      "label": "Fonctionnalités",
+      "title_1": "Tout ce qu'il faut pour",
+      "title_accent": "tisser vos fictions",
+      "items": [
+        { "icon": "📖", "title": "Comptes-rendus de partie", "desc": "Publiez vos sessions, mentionnez vos personnages, partagez votre fiction avec la communauté." },
+        { "icon": "🔗", "title": "Liens entre personnages", "desc": "Claim, Adopt, Fork — trois façons de tisser des liens entre fictions indépendantes." },
+        { "icon": "🌐", "title": "Fédération ActivityPub", "desc": "Connecté au Fediverse. Vos personnages peuvent être suivis depuis Mastodon ou BookWyrm." },
+        { "icon": "🎲", "title": "Multi-instances", "desc": "Choisissez votre instance ou auto-hébergez la vôtre. La fédération assure la connexion." }
+      ]
+    },
+    "instances": {
+      "label": "Instances",
+      "title": "Rejoignez une instance",
+      "subtitle": "Suddenly est décentralisé. Chaque instance est indépendante mais reliée aux autres via ActivityPub.",
+      "cta_all": "Voir toutes les instances",
+      "self_host": "Vous pouvez aussi",
+      "self_host_link": "héberger votre propre instance",
+      "self_host_end": "en quelques minutes."
+    },
+    "contribute": {
+      "label": "Open Source",
+      "title_1": "Contribuez à",
+      "title_accent": "Suddenly",
+      "p": "Suddenly est un logiciel libre sous licence AGPL-3.0. Vous pouvez contribuer au code, à la documentation, aux traductions ou signaler des bugs.",
+      "btn_code": "Voir le code source",
+      "btn_contribute": "Guide de contribution"
+    }
+  },
+  "features": {
+    "header": {
+      "label": "✦ Fonctionnalités",
+      "title_1": "Une fiction partagée,",
+      "title_accent": "des outils fédérés",
+      "subtitle": "Suddenly réunit les joueurs de jeu de rôle autour de comptes-rendus de partie, de personnages liés et d'une fédération ActivityPub."
+    },
+    "publishing": {
+      "tab": "Publier",
+      "title": "Comptes-rendus de",
+      "title_accent": "partie",
+      "desc": "Rédigez et publiez vos sessions de jeu. Mentionnez vos PNJ pour les rendre visibles et connectables par d'autres joueurs. Organisez vos parties en campagnes.",
+      "features": [
+        "Éditeur de texte riche",
+        "Mention de personnages",
+        "Organisation en campagnes",
+        "Tags et catégories",
+        "Visibilité publique ou privée"
+      ]
+    },
+    "characters": {
+      "tab": "Personnages",
+      "title": "Des personnages",
+      "title_accent": "vivants",
+      "desc": "Chaque personnage mentionné devient un acteur ActivityPub. Il peut être suivi, lié, ou repris par d'autres joueurs sur n'importe quelle instance Suddenly.",
+      "features": [
+        "Profil de personnage dédié",
+        "Historique des apparitions",
+        "Claim, Adopt, Fork",
+        "Liens entre personnages",
+        "Graphe des relations"
+      ]
+    },
+    "federation": {
+      "tab": "Fédération",
+      "title": "Connecté au",
+      "title_accent": "Fediverse",
+      "desc": "Suddenly utilise ActivityPub pour se fédérer avec d'autres instances Suddenly et le reste du Fediverse — Mastodon, BookWyrm et plus encore.",
+      "compatible": "Compatible avec",
+      "items": [
+        { "icon": "🐘", "name": "Mastodon", "desc": "Suivez des personnages depuis votre compte Mastodon" },
+        { "icon": "📚", "name": "BookWyrm", "desc": "Liez vos récits aux œuvres littéraires qui les inspirent" },
+        { "icon": "🎭", "name": "Suddenly", "desc": "Fédération complète entre instances Suddenly" }
+      ]
+    },
+    "cta": {
+      "label": "✦ Prêt à commencer ?",
+      "title": "Votre première aventure vous attend",
+      "subtitle": "Rejoignez une instance Suddenly et commencez à partager vos comptes-rendus.",
+      "btn": "Rejoindre une instance"
+    }
+  },
+  "instances": {
+    "header": {
+      "label": "✦ Instances",
+      "title_1": "Choisissez votre",
+      "title_accent": "point d'ancrage",
+      "subtitle": "Suddenly est décentralisé. Chaque instance est gérée indépendamment, mais toutes sont connectées via ActivityPub."
+    },
+    "what": {
+      "label": "C'est quoi une instance ?",
+      "title": "Un serveur, une communauté",
+      "p1": "Une instance Suddenly est un serveur qui héberge des comptes et des comptes-rendus. Vous choisissez l'instance qui correspond à votre communauté — ou vous en créez une.",
+      "p2": "Peu importe l'instance choisie, vous pourrez suivre des personnages et lire des récits de toutes les autres instances.",
+      "items": [
+        { "icon": "🔒", "title": "Indépendant", "desc": "Chaque instance a ses propres règles et sa propre communauté." },
+        { "icon": "🔗", "title": "Connecté", "desc": "Toutes les instances sont reliées via ActivityPub." },
+        { "icon": "🏠", "title": "Auto-hébergeable", "desc": "Lancez votre propre instance en quelques minutes avec Docker." }
+      ]
+    },
+    "list": {
+      "label": "Instances disponibles",
+      "title": "Rejoindre une instance",
+      "coming_soon": "Liste des instances bientôt disponible",
+      "coming_desc": "Le réseau Suddenly est en cours de déploiement. Les premières instances publiques seront listées ici."
+    },
+    "self_host": {
+      "label": "Hébergez la vôtre",
+      "title": "Lancez votre instance",
+      "desc": "Vous voulez héberger votre propre instance pour votre groupe ou votre communauté ? C'est simple avec Docker.",
+      "steps": [
+        { "num": "1", "title": "Cloner le dépôt", "code": "git clone https://github.com/RebelliousSmile/suddenly.git" },
+        { "num": "2", "title": "Configurer", "code": "cp .env.example .env && nano .env" },
+        { "num": "3", "title": "Lancer", "code": "./scripts/install.sh" }
+      ],
+      "btn": "Guide d'installation"
+    }
+  },
+  "contribute": {
+    "header": {
+      "label": "✦ Contribuer",
+      "title_1": "Rejoignez le",
+      "title_accent": "projet Suddenly",
+      "subtitle": "Suddenly est un logiciel libre. Toutes les contributions sont les bienvenues — code, documentation, traductions, tests, design."
+    },
+    "ways": {
+      "label": "Comment contribuer",
+      "title": "Choisissez votre voie",
+      "items": [
+        { "icon": "💻", "title": "Code", "desc": "Corrigez des bugs, ajoutez des fonctionnalités. Python 3.12, Django 5, ActivityPub.", "btn": "Voir les issues", "link": "https://github.com/RebelliousSmile/suddenly/issues" },
+        { "icon": "📝", "title": "Documentation", "desc": "Améliorez la documentation technique ou rédigez des guides utilisateur.", "btn": "Voir la doc", "link": "https://github.com/RebelliousSmile/suddenly" },
+        { "icon": "🌍", "title": "Traductions", "desc": "Aidez à traduire Suddenly dans votre langue.", "btn": "Contribuer", "link": "https://github.com/RebelliousSmile/suddenly/blob/main/CONTRIBUTING.md" },
+        { "icon": "🐛", "title": "Signaler des bugs", "desc": "Testez Suddenly et signalez les problèmes que vous rencontrez.", "btn": "Ouvrir une issue", "link": "https://github.com/RebelliousSmile/suddenly/issues/new" }
+      ]
+    },
+    "stack": {
+      "label": "Stack technique",
+      "title": "La technologie derrière Suddenly",
+      "items": [
+        { "icon": "🐍", "name": "Python 3.12", "desc": "Langage principal du backend" },
+        { "icon": "🎸", "name": "Django 5", "desc": "Framework web" },
+        { "icon": "🐘", "name": "PostgreSQL 16", "desc": "Base de données" },
+        { "icon": "⚡", "name": "Redis 7", "desc": "Cache & file de messages" },
+        { "icon": "🌐", "name": "ActivityPub", "desc": "Protocole de fédération" },
+        { "icon": "🔄", "name": "Celery", "desc": "Tâches asynchrones" }
+      ]
+    },
+    "dev": {
+      "label": "Environnement de développement",
+      "title": "Démarrer en local",
+      "steps": [
+        { "num": "1", "title": "Cloner et configurer", "code": "git clone https://github.com/RebelliousSmile/suddenly.git\ncd suddenly\ncp .env.example .env" },
+        { "num": "2", "title": "Lancer avec Docker", "code": "docker compose -f docker-compose.dev.yml up" },
+        { "num": "3", "title": "Initialiser la base", "code": "docker compose -f docker-compose.dev.yml exec web python manage.py migrate\ndocker compose -f docker-compose.dev.yml exec web python manage.py createsuperuser" }
+      ],
+      "btn_guide": "Guide complet",
+      "btn_github": "Voir sur GitHub"
+    }
+  }
+}
