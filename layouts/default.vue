@@ -12,6 +12,7 @@
             <NuxtLink :to="localePath('/fonctionnalites')">{{ $t('nav.features') }}</NuxtLink>
             <NuxtLink :to="localePath('/instances')">{{ $t('nav.instances') }}</NuxtLink>
             <NuxtLink :to="localePath('/contribuer')">{{ $t('nav.contribute') }}</NuxtLink>
+            <NuxtLink :to="localePath('/docs')">{{ $t('nav.docs') }}</NuxtLink>
             <a
               href="https://github.com/RebelliousSmile/suddenly"
               target="_blank"

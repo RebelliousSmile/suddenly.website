@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@unocss/nuxt', '@nuxtjs/i18n'],
+  modules: ['@unocss/nuxt', '@nuxtjs/i18n', '@nuxt/content'],
 
   ssr: true,
 

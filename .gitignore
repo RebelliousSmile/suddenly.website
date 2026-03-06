@@ -7,6 +7,9 @@ node_modules/
 .nuxt/
 dist/
 
+# Nuxt Content (SQLite local)
+.data/
+
 # Environment
 .env
 .env.local
