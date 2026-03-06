@@ -1,6 +1,10 @@
 <template>
   <div class="flex items-center gap-2">
-    <div class="logo-icon">🎭</div>
+    <img
+      src="/suddenly-logo.svg"
+      alt=""
+      :class="size === 'sm' ? 'logo-img-sm' : 'logo-img-md'"
+    >
     <span class="logo-text" :class="size === 'sm' ? 'text-[18px]' : 'text-[22px]'">
       Suddenly
     </span>
@@ -17,9 +21,13 @@ defineProps({
 </script>
 
 <style scoped>
-.logo-icon {
-  font-size: 1.5rem;
-  line-height: 1;
+.logo-img-sm {
+  width: 20px;
+  height: auto;
+}
+.logo-img-md {
+  width: 24px;
+  height: auto;
 }
 .logo-text {
   font-family: 'Crimson Text', Georgia, serif;
