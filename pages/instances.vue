@@ -31,7 +31,6 @@
             :key="item.title"
             class="bg-surface border border-border rounded-[16px] p-5 flex gap-4 items-start"
           >
-            <div class="text-[22px] shrink-0 mt-0.5">{{ item.icon }}</div>
             <div>
               <div class="text-primary text-[14px] font-semibold mb-1">{{ item.title }}</div>
               <div class="text-secondary text-[13px] leading-[1.5]">{{ item.desc }}</div>
@@ -49,7 +48,6 @@
           {{ $t('instances.list.title') }}
         </h2>
         <div class="coming-soon-box">
-          <div class="coming-soon-icon">🌐</div>
           <div class="coming-soon-title">{{ $t('instances.list.coming_soon') }}</div>
           <div class="coming-soon-desc">{{ $t('instances.list.coming_desc') }}</div>
         </div>
@@ -100,7 +98,7 @@ const { tm, rt } = useI18n()
 const localePath = useLocalePath()
 
 const whatItems = computed(() =>
-  tm('instances.what.items').map(i => ({ icon: rt(i.icon), title: rt(i.title), desc: rt(i.desc) }))
+  tm('instances.what.items').map(i => ({ title: rt(i.title), desc: rt(i.desc) }))
 )
 const selfHostSteps = computed(() =>
   tm('instances.self_host.steps').map(s => ({ num: rt(s.num), title: rt(s.title), code: rt(s.code) }))
@@ -125,7 +123,6 @@ const selfHostSteps = computed(() =>
   max-width: 560px;
   margin: 0 auto;
 }
-.coming-soon-icon { font-size: 3rem; margin-bottom: 16px; }
 .coming-soon-title {
   font-family: 'Crimson Text', Georgia, serif;
   font-size: 1.6rem;
