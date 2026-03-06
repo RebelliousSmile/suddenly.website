@@ -28,6 +28,7 @@ export default defineConfig({
     fontFamily: {
       serif: ["'Crimson Text'", 'Georgia', 'serif'],
       sans: ["'Inter'", '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+      display: ["'Playfair Display'", 'Georgia', 'serif'],
     },
   },
 
@@ -38,6 +39,7 @@ export default defineConfig({
     // Typography
     'label': 'text-crimson text-[12px] tracking-[3px] uppercase font-medium',
     'section-heading': 'font-serif text-primary font-normal',
+    'logo-text': 'font-display italic font-bold text-primary tracking-[-0.02em]',
 
     // Cards
     'card': 'bg-card border border-border rounded-2xl',

@@ -5,9 +5,7 @@
       alt=""
       :class="size === 'sm' ? 'logo-img-sm' : 'logo-img-md'"
     >
-    <span class="logo-text" :class="size === 'sm' ? 'text-[18px]' : 'text-[22px]'">
-      Suddenly
-    </span>
+    <span class="logo-text" :class="size === 'sm' ? 'text-[18px]' : 'text-[22px]'">Suddenly</span>
   </div>
 </template>
 
@@ -21,18 +19,6 @@ defineProps({
 </script>
 
 <style scoped>
-.logo-img-sm {
-  width: 20px;
-  height: auto;
-}
-.logo-img-md {
-  width: 24px;
-  height: auto;
-}
-.logo-text {
-  font-family: 'Crimson Text', Georgia, serif;
-  font-weight: 600;
-  color: #EDE8F5;
-  letter-spacing: -0.01em;
-}
+.logo-img-sm { width: 20px; height: auto; }
+.logo-img-md { width: 24px; height: auto; }
 </style>
