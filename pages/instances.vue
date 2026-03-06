@@ -47,9 +47,24 @@
         <h2 class="font-serif text-[2.4rem] font-normal text-primary text-center mb-[50px] leading-[1.2]">
           {{ $t('instances.list.title') }}
         </h2>
-        <div class="coming-soon-box">
-          <div class="coming-soon-title">{{ $t('instances.list.coming_soon') }}</div>
-          <div class="coming-soon-desc">{{ $t('instances.list.coming_desc') }}</div>
+        <div class="instances-grid">
+          <div
+            v-for="instance in instanceItems"
+            :key="instance.name"
+            class="instance-card"
+          >
+            <div class="instance-card-header">
+              <div class="instance-name">{{ instance.name }}</div>
+              <span v-if="instance.badge" class="instance-badge">{{ $t(`instances.list.${instance.badge}`) }}</span>
+            </div>
+            <p class="instance-desc">{{ instance.description }}</p>
+            <div class="instance-footer">
+              <span class="instance-lang">{{ instance.lang }}</span>
+              <a :href="instance.url" target="_blank" rel="noopener noreferrer" class="btn-primary btn-sm">
+                {{ $t('instances.list.join') }}
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -103,6 +118,15 @@ const whatItems = computed(() =>
 const selfHostSteps = computed(() =>
   tm('instances.self_host.steps').map(s => ({ num: rt(s.num), title: rt(s.title), code: rt(s.code) }))
 )
+const instanceItems = computed(() =>
+  tm('instances.list.items').map(i => ({
+    name: rt(i.name),
+    url: rt(i.url),
+    description: rt(i.description),
+    lang: rt(i.lang),
+    badge: rt(i.badge),
+  }))
+)
 </script>
 
 <style scoped>
@@ -113,23 +137,69 @@ const selfHostSteps = computed(() =>
   border-bottom: 1px solid #2D2845;
 }
 
-/* ── Coming soon ────────────────────────────────────────── */
-.coming-soon-box {
-  background: #18162A;
-  border: 1px dashed rgba(224,53,88,0.3);
-  border-radius: 20px;
-  padding: 60px 40px;
-  text-align: center;
-  max-width: 560px;
+/* ── Instance cards ─────────────────────────────────────── */
+.instances-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  max-width: 800px;
   margin: 0 auto;
 }
-.coming-soon-title {
-  font-family: 'Crimson Text', Georgia, serif;
-  font-size: 1.6rem;
-  color: #EDE8F5;
-  margin-bottom: 10px;
+.instance-card {
+  background: #18162A;
+  border: 1px solid #2D2845;
+  border-radius: 16px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: border-color 0.2s;
 }
-.coming-soon-desc { font-size: 14px; color: #7A7290; line-height: 1.6; }
+.instance-card:hover { border-color: rgba(224,53,88,0.4); }
+.instance-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.instance-name {
+  font-family: 'Courier New', monospace;
+  font-size: 15px;
+  font-weight: 700;
+  color: #EDE8F5;
+}
+.instance-badge {
+  font-size: 11px;
+  font-weight: 600;
+  color: #E03558;
+  background: rgba(224,53,88,0.12);
+  border: 1px solid rgba(224,53,88,0.25);
+  border-radius: 20px;
+  padding: 2px 10px;
+  white-space: nowrap;
+}
+.instance-desc {
+  font-size: 14px;
+  color: #7A7290;
+  line-height: 1.65;
+  flex: 1;
+}
+.instance-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 4px;
+}
+.instance-lang {
+  font-size: 13px;
+  color: #B0A8CC;
+}
+.btn-sm {
+  padding: 8px 18px !important;
+  font-size: 13px !important;
+}
 
 /* ── Self-host steps ────────────────────────────────────── */
 .self-host-step {

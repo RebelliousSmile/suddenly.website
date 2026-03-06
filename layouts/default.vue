@@ -41,7 +41,9 @@
           </div>
           <div class="footer-links">
             <a href="https://github.com/RebelliousSmile/suddenly" target="_blank" rel="noopener noreferrer">{{ $t('footer.github') }}</a>
-            <a href="https://github.com/RebelliousSmile/suddenly/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">{{ $t('footer.license') }}</a>
+            <a href="https://github.com/RebelliousSmile/suddenly/issues" target="_blank" rel="noopener noreferrer">{{ $t('footer.issues') }}</a>
+            <a href="https://github.com/RebelliousSmile/suddenly/blob/main/CHANGELOG.md" target="_blank" rel="noopener noreferrer">{{ $t('footer.changelog') }}</a>
+            <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener noreferrer">{{ $t('footer.license') }}</a>
           </div>
           <p class="footer-copy">
             {{ $t('footer.copy') }} — AGPL-3.0

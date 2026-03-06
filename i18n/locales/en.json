@@ -7,6 +7,8 @@
   },
   "footer": {
     "github": "GitHub",
+    "issues": "Issues",
+    "changelog": "Changelog",
     "license": "License",
     "copy": "© 2026 Suddenly"
   },
@@ -135,8 +137,25 @@
     "list": {
       "label": "Available instances",
       "title": "Join an instance",
-      "coming_soon": "Instance list coming soon",
-      "coming_desc": "The Suddenly network is being deployed. The first public instances will be listed here."
+      "join": "Join",
+      "open_registrations": "Open registrations",
+      "main_instance": "Main instance",
+      "items": [
+        {
+          "name": "then.suddenly.social",
+          "url": "https://then.suddenly.social",
+          "description": "The main and reference instance of the Suddenly network. Open to everyone, all languages welcome.",
+          "lang": "🌐 Multilingual",
+          "badge": "main_instance"
+        },
+        {
+          "name": "soudainement.fr",
+          "url": "https://soudainement.fr",
+          "description": "The French-speaking Suddenly instance. For players who prefer to write in French.",
+          "lang": "🇫🇷 French",
+          "badge": ""
+        }
+      ]
     },
     "self_host": {
       "label": "Host your own",
